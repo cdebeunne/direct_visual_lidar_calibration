@@ -1,0 +1,13 @@
+# sensor topics
+camera_topic: '/cam_0/image_raw'
+lidar_topic: '/cortex/ouster/points'
+
+# camera parameters
+distortion_model: 'equidistant'
+distortion_coefficients: [0.01879377, -0.00132283, -0.00234174, 0.00032518]
+intrinsics: [499.86967694, 0.0, 650.07989234, 0.0, 499.77443338, 531.47666637, 0.0, 0.0, 1.0]
+height: 1024
+width: 1280
+
+# when does the recording stop (if 0, all the bag is formatted)
+stop_stamp: 1710776357888979114
