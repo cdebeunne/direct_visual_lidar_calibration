@@ -62,7 +62,7 @@ if __name__ == '__main__':
         for conn, timestamp, data in reader.messages():
             msg = deserialize_cdr(data, conn.msgtype)
             
-            if (stop_stamp != 0 & timestamp > stop_stamp):
+            if ((stop_stamp != 0) & (timestamp > stop_stamp)):
             	break
             
             if (conn.topic == camera_topic,):
